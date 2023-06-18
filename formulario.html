@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" as="style">
+    <script type="text/javascript" charset="utf-8" src="index.js"></script>
+  </head>
+  <body>
+    <div class="container border">
+      <div  class="title">
+        <h2 class="default-text-color">Create Account</h2>
+      </div>
+
+      <form method="POST" action="">
+        <div id="nombreRow" class="row-inputs">
+          <label class="default-text-color" for="nombre">Nombre</label>
+          <input class="border" name="nombre" type="text" id="nombre" maxlength="20" required/>
+          <p id="nombreError" class="errorMessage"></p>
+        </div>
+
+        <div id="primerApellidoRow" class="row-inputs">
+          <label class="default-text-color" for="apellido">Primer Apellido</label>
+          <input class="border" name="primerApellido" type="text" id="primerApellido" maxlength="20" required/>
+          <p id="primerApellidoError" class="errorMessage"></p>
+        </div>
+
+        <div id="segundoApellidoRow" class="row-inputs">
+          <label class="default-text-color" for="apellido">Segundo Apellido</label>
+          <input class="border" name="segundoApellido" type="text" id="segundoApellido" maxlength="20" required/>
+          <p id="segundoApellidoError" class="errorMessage"></p>
+        </div>
+
+        <div id="emailRow" class="row-inputs">
+          <label class="default-text-color" for="email">Email</label>
+          <input class="border" name="email" type="email" id="email" maxlength="20" required/>
+          <p id="emailError" class="errorMessage"></p>
+        </div>
+
+        <div id="passRow" class="row-inputs">
+          <label class="default-text-color" for="pass">Clave</label>
+          <input class="border" name="password" type="password" id="password" maxlength="20" required/>
+          <p id="passwordError" class="errorMessage"></p>
+        </div>
+
+        <div class="row-button">
+          <input class="form-btn border button1" name="submit" type="submit" width:"20%" value="Suscribirse" maxsize onclick="validate(event);"/>
+        </div>
+        <div>
+          <p class="errorMessage" id="phpError"></p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
