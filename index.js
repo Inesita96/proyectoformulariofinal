@@ -15,7 +15,6 @@ function validate(evt){
       switch(id) {
         case 'nombre':
           successInput = validateNombreApellidos(id, inputText);
-          console.log(successInput)
           break;
         case 'primerApellido':
           successInput = validateNombreApellidos(id, inputText);
@@ -48,9 +47,6 @@ function validate(evt){
 
   if(submitSucceed){
     data =  crearUsuarioPhp(phpbody).then(data => {
-      console.log(data);
-      console.log(data.error);
-      console.log(data.success);
       if(data.error != ''){
         document.getElementById("phpError").innerHTML = data.error
       }else{
